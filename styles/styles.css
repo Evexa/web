@@ -1,0 +1,660 @@
+
+/***************************************
+Common Styles
+***************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: white;
+	color: #565252;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 15.66%;}
+.col-3 {width: 24.3%;}
+.col-4 {width: 32.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 48%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: black;
+	content: " ";
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+section {
+	padding: 100px 0;
+	clear: both;
+}
+
+section p,
+ #contact-form {
+	font-size: 85%;
+}
+
+/***************************************
+Header Styles
+***************************************/
+
+header {
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(../images/photo-by-jeremy-thomas.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.header-text {
+	padding-top: 150px;
+}
+
+#header-title {
+	margin-left: 8.33%;
+	background-color: white;
+	max-width: 35%;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #171717;
+	letter-spacing: 0.179487em;
+	font-size: 2.5em;
+	line-height: 1em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+#header-headline {
+	margin-top: 25px;
+	margin-left: 8.33%;
+	background-color: white;
+	max-width: 25%;
+	padding: 15px;
+}
+
+#header-buttons {
+	margin-top: 25px;
+	margin-left: 8.33%;
+	letter-spacing: 0.181111em;
+}
+
+#logo-text {
+	float: left;
+	margin-left: 2%;
+}
+
+#main-nav {
+	float: right;
+	list-style: none;
+	margin-right: 2%;
+}
+
+#sticky-nav #main-nav li {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 0.8em;
+}
+
+#sticky-nav #main-nav li a:link,
+#sticky-nav #main-nav li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	opacity: 0.6;
+}
+
+#sticky-nav #main-nav li a:hover,
+#sticky-nav #main-nav li a:active {
+	opacity: 1;
+	transition: 1s;
+}
+
+#logoimg {
+	width: auto;
+	height: 70px;
+	float: left;
+	margin-left: 30px;
+	margin-right: -8px;
+}
+
+#sticky-nav #logoimg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-left: 20px;
+	margin-right: -8px;
+	float: left;
+}
+
+#sticky-nav #logo-text a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #171717;
+	letter-spacing: 8px;
+	padding-left: 50px;
+}
+
+nav {
+	background: #fff;
+	height: 3%;
+	padding: 25px;
+}
+
+#sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 999;
+	box-shadow: 0 2px 2px #eae3e3;
+}
+
+.mobile-nav-icon {
+	float: right;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon {
+	font-size: 200%;
+	color: black;
+}
+
+/***************************************
+Button Styles
+***************************************/
+
+.button1:link,
+.button1:visited {
+	display: inline-block;
+	padding: 10px 13px;
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	border: 1px solid white;
+	border-radius: 5px;
+	transition: background-color 1s, border 1s;
+}
+
+.button2:link,
+.button2:visited {
+	display: inline-block;
+	padding: 10px 13px;
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	border: 1px solid white;
+	border-radius: 5px;
+	transition: background-color 1s, border 1s;
+}
+
+.button1:link,
+.button1:visited {
+	background-color: white;
+	color: #171717;
+}
+
+.button2:link,
+.button2:visited {
+}
+
+.button1:hover,
+.button1:active {
+	background: #a1a1a1;
+	border: 1px solid #a1a1a1;
+}
+
+.button2:hover,
+.button2:active {
+	background: #a1a1a1;
+	border: 1px solid #a1a1a1;
+}
+
+/***************************************
+Features Styles
+***************************************/
+
+#headline-text {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 100%;
+}
+
+.feature-icon {
+	font-size: 300%;
+	margin-bottom: 20px;
+}
+
+/***************************************
+Images Styles
+***************************************/
+
+.images-container1 {
+	list-style: none;
+	width: 50%;
+	float: left;
+}	
+
+.images-container1 li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.images-container2 {
+	list-style: none;
+	width: 50%;
+	float: left;
+	margin-left: -0.01px;
+}	
+
+.images-container2 li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+.star-image {
+	width: 100%;
+	overflow: hidden;
+	background: black;
+}
+
+.star-image img {
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	transform: scale(1.2);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.star-image img:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+
+/***************************************
+How To Order Styles
+***************************************/
+
+#pen-image {
+	width: 100%;
+
+}
+
+#pen-image-container {
+	margin-left: 10%;
+	margin-right: 6.6%;
+}
+
+.order-step {
+	margin-top: 50px;
+}
+
+.order-step div {
+	color: black;
+	border: 2px solid black;
+	border-radius: 150px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 5px;
+	font-size: 160%;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.order-step p {
+	padding-top: 15px;
+}
+
+.app-bitton img {
+	height: 50px;
+	width: auto;
+	margin-top: 50px;
+	margin-left: 0;
+
+}
+
+.order-step:last-of-type {
+	margin-bottom: 100px;
+}
+
+.col-3 img {
+	width: 1890px;
+	height: auto;
+
+}
+
+.info {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#milkyway {
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(../images/milkyway3.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+
+}
+
+
+/***************************************
+Feedback Styles
+***************************************/
+
+#feedback-section {
+	background-image: url(../images/sunrise.jpg);
+	background-size: cover;
+	height: 50vh;
+	background-position: center;
+	color: white;
+	background-attachment: fixed;
+}
+
+blockquote {
+	font-style: italic;
+	font-weight: 300;
+	line-height: 150%;
+	color: white;
+
+}
+
+cite {
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+blockquote div:before {
+	content: "\201D";
+	font-size: 300%;
+	color: white;
+}
+
+blockquote:after {
+	content: "\201D";
+	font-size: 300%;
+	line-height: 150%;
+	color: white;
+}
+
+cite img {
+	display: inline-block;
+	width: 100px;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+#feedback-section h2:after {
+	display: block;
+	height: 2px;
+	background-color: white;
+	content: " ";
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/***************************************
+Contact Form Styles
+***************************************/
+
+#contact-form {
+	margin: 70px auto;
+	width: 35%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+textarea {
+	height: 100px;
+}
+
+input[type=submit] {
+	display: inline-block;
+	padding: 10px 13px;
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	border: 1px solid black;
+	border-radius: 5px;
+	transition: background-color 1s, border 1s;
+	margin-top: 25px;
+	letter-spacing: 0.181111em;
+}
+
+input[type=submit]:link,
+input[type=submit]:visited {
+	background-color: white;
+	color: #171717;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+	background: #a1a1a1;
+	border: 1px solid #a1a1a1;
+}
+
+/***************************************
+Contact Form Styles
+***************************************/
+
+footer {
+	text-align: center;
+	padding: 15px;
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+}
+
+li {
+	list-style-type: none;
+}
+#footer-social-links {
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+#footer-social-links li {
+	font-size: 0.8em;
+	margin-right: 30px;
+	display: inline-block;
+}
+
+#footer-nav {
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+#footer-nav li a:link,
+#footer-nav li a:visited,
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	opacity: 0.6;
+}
+
+#footer-nav li a:hover,
+#footer-nav li a:active,
+#footer-social-links li a:hover,
+#footer-social-links li a:active {
+	opacity: 1;
+	transition: 1s;
+}
+
+#footer-social-links li a:link,
+#footer-social-links li a:visited {
+	font-size: 150%;
+}
+
+/***************************************
+Animation Styles
+***************************************/
+.anim1,
+.anim2 {
+	opacity: 0;
+}
+
+.anim1.animated
+.anim2.animated {
+	opacity: 1;
+}
+
+/***************************************
+Media Query Styles
+***************************************/
+
+@media only screen and (max-width: 970px)  {
+	[class*="col-"] {
+		width: 100%;
+		padding-left: 2px;
+		padding-right: 2px;
+		text-align: justify;
+		width: 98%;
+	}
+
+	#logo-text {
+	float: left;
+	margin-left: 10%;
+	}
+
+
+	.button1 {
+		margin-bottom: 20px;
+	}
+
+	.button2 {
+		margin-bottom: 20px;
+	}
+
+	#contact-form {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.mobile-nav-icon {
+		display: inline-block;
+	}
+
+	#main-nav {
+		float: right;
+		margin-right: 15%;
+	}
+
+	#main-nav- li {
+		display: block;
+	}
+
+	#main-nav li a:link,
+	#main-nav li a:visited {
+		display: block;
+	}
+
+	.mobile-nav-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin-right: 10px;
+		margin-top: 10px;
+		cursor: pointer;
+		display: none;
+	}
+
+	#header-title {
+		font-size: 200%;
+		background: none;
+		color: white;
+		text-align: center;
+		margin-left: 4%;
+	}
+
+	.clearfix::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+	#feedback-section {
+	background-image: url(../images/sunrise.jpg);
+	background-size: cover;
+	height: 135vh;
+	background-position: center;
+	color: white;
+	background-attachment: fixed;
+	}
+
+	#pen-image {
+		width: 75%;
+		height: auto;
+	} 
+
+	.app-bitton {
+		float: left;
+		margin-left: 3.5%;
+	}
+
+	#contact-form {
+
+
+	}
+}
+
+.slider-item {
+	margin-left: 25%;
+}
